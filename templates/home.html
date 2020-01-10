@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Flask Web App</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+
+<h1>Boston Regression</h1>
+<p> Please fill in the values below to predict Boston house price</p>
+
+<form action="/result" method="POST">
+
+    <label>CRIM</label>
+    <input type="text" name="crim">
+    <br>
+    <label>ZN</label>
+    <input type="text" name="zn">
+    <br>
+    <label>INDUS</label>
+    <input type="text" name="indus">
+    <br>
+    <label>CHAS</label>
+    <input type="text" name="chas">
+    <br>
+    <label>NOX</label>
+    <input type="text" name="nox">
+    <br>
+    <label>RM</label>
+    <input type="text" name="rm">
+    <br>
+    <label>AGE</label>
+    <input type="text" name="age">
+    <br>
+    <label>DIS</label>
+    <input type="text" name="dis">
+    <br>
+    <label>RAD</label>
+    <input type="text" name="rad">
+    <br>
+    <label>TAX</label>
+    <input type="text" name="tax">
+    <br>
+    <label>PTRATIO</label>
+    <input type="text" name="ptratio">
+    <br>
+    <label>BLACK</label>
+    <input type="text" name="black">
+    <br>
+    <label>LSTAT</label>
+    <input type="text" name="lstat">
+    <br>
+    <input type="submit" value="Submit">
+
+
+</form>
+
+</body>
+</html>
